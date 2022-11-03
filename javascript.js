@@ -24,3 +24,14 @@ switch_btn_sign_up.addEventListener("click", function() {
     document.querySelector(".auth-form__login").style.display="none";
     document.querySelector(".auth-form__register").style.display="block";
 })
+
+var like = document.querySelector(".home-product-item__like");
+like.addEventListener('click', function() {
+    like.className = "home-product-item__like home-product-item__like--liked";
+})
+
+var icon_fill = document.querySelector(".home-product-item__like-icon-fill");
+icon_fill.addEventListener('click', function() {
+    document.querySelector(".home-product-item__like-icon-fill").style.display = 'none';
+    document.querySelector(".home-product-item__like-icon-empty").style.display = 'inline-block';
+})
